@@ -9,7 +9,7 @@
         {% for elements in query %}
          
             <table class = "menu_table" border ="3" cellpadding="5" cellspacing="5" bordercolor="black" bgcolor="#2196F3">
-              <caption> <b>Your favorite Foodtruck meals! </b> </caption>
+              <caption> <b>Here's Your Foodtruck Dish Stats! </b> </caption>
               <tr>  <th bgcolor="#2196F3">   </th>  </tr>
               <tr> <th> Truck Name </th> </tr>
               <tr> <td> {{ elements.truck_name  }} </td> </tr>
@@ -36,11 +36,11 @@
             <br>
             <br>
               <tr> <th> Document Link </th> </tr>
-              <tr> <td> {{ elements.doc_link  }} </td> </tr>
+              <tr> <td> <a href="{{ elements.doc_link  }} "> Click Here to access menu doc </a> </td> </tr>
             <br>
             <br>
               <tr> <th> Pack List </th> </tr>
-              <tr> <td> {{ elements.pack_list  }} </td> </tr>
+              <tr> <td> <a href="{{ elements.pack_list  }} "> Click Here to access the Pack List doc </a></td> </tr>
             <br>
             <br>
               <tr> <th> Plating Instructions - Portion Size </th> </tr>
@@ -81,7 +81,7 @@
       <option value="Miko Miko"> Miko Miko </option>
       <option value="Taco Titans"> Taco Titans </option>
       <option value="Coffee Truck"> Coffee Truck </option>
-      <option value="319"> 319  </option>
+      <option value="Khao and Chicken"> Khao and Chicken  </option>
       <option value="320"> 320 </option>
       <option value="321"> 321 </option>
     </select>
